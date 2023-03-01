@@ -14,7 +14,8 @@ class SwipVC: UIViewController {
     let label = Label(textAlignment: .center, fontSize: 38)
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        let call = NetworkManager()
+        call.callAPI()
         view.backgroundColor = .systemGray6
         configureLabel()
         configureButton()
